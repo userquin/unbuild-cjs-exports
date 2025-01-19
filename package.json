@@ -9,6 +9,10 @@
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.3",
     "mlly": "^1.7.4",
+    "package-a": "workspace:*",
+    "package-b": "workspace:*",
+    "package-c": "workspace:*",
+    "package-d": "workspace:*",
     "rimraf": "^6.0.1",
     "rollup": "^4.31.0",
     "typescript": "^5.7.3",
