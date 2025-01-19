@@ -10,9 +10,4 @@ export default defineBuildConfig({
     emitCJS: true,
   },
   externals: ['package-a'],
-  hooks: {
-    'rollup:dts:options': (ctx, options) => {
-      options.plugins.push(fixCJSExportTypePlugin(ctx))
-    },
-  },
 })
