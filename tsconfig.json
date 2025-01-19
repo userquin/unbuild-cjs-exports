@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "jsx": "preserve",
+    "lib": [
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "package-a": [
+        "./packages/package-a/src/"
+      ],
+      "package-b": [
+        "./packages/package-b/src/"
+      ],
+      "package-c": [
+        "./packages/package-c/src/"
+      ],
+      "package-d": [
+        "./packages/package-d/src/"
+      ]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "**/dist/**",
+    "**/node_modules/**"
+  ]
+}
