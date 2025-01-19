@@ -14,6 +14,18 @@ importers:
       mlly:
         specifier: ^1.7.4
         version: 1.7.4
+      package-a:
+        specifier: workspace:*
+        version: link:packages/package-a
+      package-b:
+        specifier: workspace:*
+        version: link:packages/package-b
+      package-c:
+        specifier: workspace:*
+        version: link:packages/package-c
+      package-d:
+        specifier: workspace:*
+        version: link:packages/package-d
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
@@ -26,6 +38,22 @@ importers:
       unbuild:
         specifier: ^3.3.1
         version: 3.3.1(typescript@5.7.3)
+
+  packages/package-a: {}
+
+  packages/package-b: {}
+
+  packages/package-c:
+    dependencies:
+      package-a:
+        specifier: workspace:*
+        version: link:../package-a
+
+  packages/package-d:
+    dependencies:
+      package-b:
+        specifier: workspace:*
+        version: link:../package-b
 
 packages:
 
