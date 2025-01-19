@@ -4,7 +4,7 @@ There are some edge cases with CJS exports that are not supported by unbuild. Th
 
 Check https://github.com/unjs/unbuild/pull/475 for further details.
 
-This repository using `unbuild v3.1.0`, using `3.2.0+` will not work since the dts files are wrongly generated in `package-c` and `package-d`: checkout `wrong-cjs` branch.
+This repository using `unbuild v3.1.0`, using `3.2.0+` will not work since the dts files are wrongly generated for `package-a`, package-c` and `package-d`: checkout `wrong-cjs` branch.
 
 ## Check the output
 
