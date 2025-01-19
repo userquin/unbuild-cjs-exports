@@ -2,7 +2,6 @@
   "name": "unbuild-check-named",
   "packageManager": "pnpm@9.15.4",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "build": "rimraf packages/*/dist --glob && pnpm -r run build",
     "test:attw": "pnpm -r test:attw"
